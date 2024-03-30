@@ -8,7 +8,9 @@
     <script type="text/javascript" src={% static 'js/app.js' %}></script>
     <title>Blog do Igor</title>
 </head>
+<div class="fot">
 <body>
+</div>
     <header class="header">
         <nav class="nav">
           <a href="{% url 'home' %}" class="logo">🐍 Py</a>
@@ -20,12 +22,20 @@
           </ul>
         </nav>
       </header>
+      <img class="hero">
       <div class="container1">
-        <div class="container">
-            
-        
-           
+        <div class="text">
+          <h1>Oi, me chamo Igor 👋</h1><br />
+          <p> Estou a procura do meu primeiro emprego na vaga de Jr. <br /> 
+            em python seja (django, flask, script, automação), <br /> se você quiser posso te ajudar
+             a solucionar <br />
+            problemas dentro da sua empresa no botão abaixo você sera <br /> 
+            direicionado ao meu contato</p>
         </div>
+        <a href="{% url 'contato' %}" class="btneon">CONTATO</a>
+        <div class="container">
+          
+      <img class="hero">
     </html>
 </div>
 </html>

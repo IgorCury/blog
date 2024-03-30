@@ -7,6 +7,14 @@
     font-family: sans-serif;
     text-decoration: none;
   }
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1f242d;
+}
   
   .header {
     background: rgb(85, 81, 87);
@@ -25,7 +33,7 @@
   
   .logo {
     font-size: 48px;
-    color: #fff;;
+    color: #fff;
   }
   
   .nav-list {
@@ -138,8 +146,8 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: black;
-    opacity: 0.5;
+    background-color: #1f242d;
+    opacity: 1;
 }
 
 .tag{
@@ -166,12 +174,10 @@ input, textarea{
 
 form-control{
   height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   color: #fff;
-  cursor: text;
 }
 .btn_submit-btn{
   padding: 10px 0;
@@ -183,6 +189,94 @@ form-control{
   cursor: pointer;
 }
 
-.img{
-  width: 100px;
+.hero{
+  background-image: url(../img/python-removebg-preview.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 200px;
+  width: 200px;
+  position: absolute;
+  left: 55%;
+  margin-left: -100px;
+  top: 50%;
+  margin-top: -140px;
+  background-color: #1f242d;
+  width: 42%;
+  height: 65%;
+  color: #1f242d;
+}
+.text{
+  margin: 100px auto auto 50px;
+  color: white;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btneon{
+  position: relative;
+  display: inline-block;
+  padding: 15px 20px;
+  margin: 40px 0;
+  color:#33ff00;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+  transition: 0.4s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  font-weight: bold;
+  margin-right: 50px;
+  border: 2px solid #33ff00;
+  border-radius:50px;
+  position: absolute;
+  left: 10%;
+  margin-left: 10px;
+  top: 60%;
+}
+
+.btneon:hover{
+  background: #33ff00;
+  color: #000;
+  box-shadow: 0 0 10px #33ff00, 0 0 40px #33ff00, 0 0 70px #33ff00;
+}
+
+.btneon:active{
+  color:#33ff00; 
+  background: #000000;
+}
+
+.cab{
+  position: absolute;
+  margin-left: 300px;
+  top: 1%;
+
+}
+
+.cabec{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.cabec1{
+  margin-left: 400px;
+  font-weight: 600;
+  color: white;
+  font-size: 20px;
+}
+
+.contact-left{
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: white;
+  border-radius: 50px;
+}
+
+.conttex{
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
 }

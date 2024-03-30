@@ -10,39 +10,30 @@
     <title>Blog do Igor</title>
 </head>
 <body>
-    <header class="header">
-      <nav class="nav">
-        <a href="{% url 'home' %}" class="logo">🐍 Py</a>
-        <button class="hamburger"></button>
-        <ul class="nav-list">
-          <li><a href="{% url 'sobre' %}">Sobre</a></li>
-          <li><a href="{% url 'projeto' %}">Projetos</a></li>
-          <li><a href="{% url 'contato' %}">Contato</a></li>
-        </ul>
-      </header>
+   <header class="header">
+    <nav class="nav">
+      <a href="{% url 'home' %}" class="logo">🐍 Py</a>
+      <button class="hamburger"></button>
+      <ul class="nav-list">
+      <li><a href="{% url 'sobre' %}">Sobre</a></li>
+      <li><a href="{% url 'projeto' %}">Projetos</a></li>
+      <li><a href="{% url 'contato' %}">Contato</a></li>
+      </ul>
+  </header>
+
       <div class="container1">
         <div class="container">
-            <form action="" method="POST" class="contact-form">
-                {% csrf_token %}
-                <div class="form-control">
-                    
-                    <input type="text" name="full-name" placeholder="Digite seu nome">
-                </div></br>
-                <div class="form-control">
-                    
-                    <input type="text" name="email" placeholder="Digite seu e-mail">
-                </div></br>
-                <div class="form-control">
-                   
-                    <input type="text" name="subject" placeholder="Assunto">
-                </div></br></br>
-                <div class="form-control">
-                    
-                    <textarea name="message" id="message" rows="10" cols="30"> 
-                    </textarea> 
-                <div class="form-control">
-                <input type="submit" class="btn submit-btn" value="ENVIAR">
-    </div>
+            <div class="text">
+                <div class="cab">
+                <h1>PROJETOS 🚀</h1><br />
+                </div>
+                <p> Criei este blog para me desafiar, irei falar melhor dos desafios que 
+                    encontrei neste projeto no meu github </br> e colocarei ele o link dele aqui tambem.
+                    Pretendo mensalmente atualizar este blog conforme </br> for aprendendo mais e evoluindo.
+                    Hoje estou trabalhando em um sistema de cotação </br> para empresa onde trabalho, mas por fora
+                    tambem irei colocar ele no github.
+                </p>
+              </div>
     </html>
 </div>
 </html>
