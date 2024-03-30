@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script type="text/javascript" src={% static 'js/app.js' %}></script>
+    <title>Blog do Igor</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+          <a href="{% url 'home' %}" class="logo">🐍 Py</a>
+          <button class="hamburger"></button>
+          <ul class="nav-list">
+            <li><a href="{% url 'sobre' %}">Sobre</a></li>
+            <li><a href="{% url 'projeto' %}">Projetos</a></li>
+            <li><a href="{% url 'contato' %}">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container1">
+        <div class="container">
+            
+        
+           
+        </div>
+    </html>
+</div>
+</html>
