@@ -46,7 +46,7 @@ def contato(request):
         From: {}
 
         '''. format(data['message'], data['email'])
-        send_mail(data['subject'], message, '', ['igorcury210@gmail.com'])
+        send_mail(data['subject'], message, '', [''])
 
     return render(request, 'contato.html')
      
